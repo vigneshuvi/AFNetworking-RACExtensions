@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AFNetworking-RACExtensions"
-  s.version      = "0.1.8"
+  s.version      = "0.1.9"
   s.summary      = "AFNetworking-RACExtensions is a delightful extension to the AFNetworking classes for iOS and Mac OS X."
   s.homepage     = "https://github.com/vigneshuvi/AFNetworking-RACExtensions"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -17,13 +17,13 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSURLConnection' do |ss|
-    ss.dependency 'AFNetworking/NSURLConnection', '~> 2.0'
+    ss.dependency 'AFNetworking/NSURLConnection'
     ss.dependency 'ReactiveCocoa/Core', '~> 2.0'
     ss.source_files = 'RACAFNetworking/AFURLConnectionOperation+RACSupport.{h,m}', 'RACAFNetworking/AFHTTPRequestOperationManager+RACSupport.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
-    ss.dependency 'AFNetworking/NSURLSession', '~> 2.0'
+    ss.dependency 'AFNetworking/NSURLSession'
     ss.dependency 'ReactiveCocoa/Core', '~> 2.0'
     ss.source_files = 'RACAFNetworking/AFHTTPSessionManager+RACSupport.{h,m}'
   end
